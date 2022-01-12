@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_passwords_must_match">Passwords must match !</string>
+    <string name="message_new_repeated_password_not_match">Repeated password is not match new password</string>
+    <string name="message_successfully_updated_password">Your password has been successfully updated</string>
+    <string name="message_wrong_password">Wrong password</string>
+    <string name="message_password_not_empty">Password must not be empty</string>
+    <string name="message_new_password_not_empty">New password must not be empty</string>
+    <string name="message_password_conditions">Password must contain at least one digit, one upper case and has to be 8 char long minimum</string>
+    <string name="message_error_updating_password">An error occurred while updating your password. Please retry !</string>
+
+
+    <string name="message_email_not_send">E-mail not sent. Please retry !</string>
+    <string name="message_email_not_good_format">Email is not in the good format !</string>
+    <string name="message_enter_valid_email">Please enter a valid email !</string>
+    <string name="message_confirmation_email_sent">A confirmation email has been sent. Please confirm your email.</string>
+    <string name="message_reset_password_email_sent">Reset password email sent !</string>
+
+
+    <string name="message_pot_name_already_exists">Pot name already exists. Please choose another name.</string>
+    <string name="message_warning_add_yourself">Warning ! You cannot add yourself to the pot !</string>
+    <string name="message_error_add_person">An error happened while adding people to pot ! Please retry !</string>
+    <string name="message_invitation_send">Invitation send to</string>
+    <string name="message_warning_person_already_in_pot">is already in pot</string>
+    <string name="message_error_no_account">This account does not exist</string>
+
+
+    <string name="message_please_verify_account_before">Please verify your account before</string>
+    <string name="message_invalid_group_name">Invalid group name</string>
+    <string name="message_error_creating_new_pot">An error occurred while creating new pot. Please retry !</string>
+    <string name="message_first_name_must_not_empty">First name must not be empty !</string>
+    <string name="message_last_name_must_not_empty">Last name must not be empty !</string>
+    <string name="message_warning_participant_already_pot">This participant is already in the pot. You cannot add it twice.</string>
+
+    <string name="message_profile_successfully_updated">Your profile has been successfully updated !</string>
+
+    <string name="message_error_fetch_photo">An error occurred while fetching picture profile. Please retry !</string>
+    <string name="message_error_update_photo">An error occurred while updating profile picture, please retry.</string>
+    <string name="message_error_update_profile">An error occurred while updating profile, please retry.</string>
+    <string name="message_error_fetch_cagnottes">An error occurred while getting pots, please retry.</string>
+    <string name="message_error_add_new_spend">An error occurred while adding new spend, please retry.</string>
+    <string name="message_error_update_balances">An error occurred while updating balance, please retry.</string>
+    <string name="message_error_add_participant">An error occurred while adding a participant to the pot, please retry.</string>
+    <string name="message_error_create_profile">An error occurred while creating your profile, please retry.</string>
+
+    <string name="message_warning_delete">This action cannot be undone. Are you sure ?</string>
+
+</resources>

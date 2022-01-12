@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_settings_24"
+                    android:scaleType="center"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:text="@string/settings"
+                    android:fontFamily="@font/raleway_medium" />
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:padding="3dp"
+                    android:backgroundTint="@color/error"
+                    app:cardCornerRadius="10dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/cagnotteSettingsDelete">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        app:srcCompat="@drawable/ic_baseline_delete_24"
+                        android:scaleType="center" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:flexDirection="row"
+                app:alignItems="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cagnotte_name"
+                    app:layout_flexBasisPercent="40%" />
+
+                <EditText
+                    android:id="@+id/cagnotteSettingsCagnotteName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="60%" />
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:flexDirection="row"
+                app:alignItems="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cagnotte_color"
+                    app:layout_flexBasisPercent="40%" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_flexBasisPercent="60%"
+                    android:id="@+id/cagnotteSettingsColorPreview"/>
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:flexDirection="row"
+                app:alignItems="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                app:layout_flexBasisPercent="40%" />
+
+            <EditText
+                android:id="@+id/cagnotteSettingsDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_flexBasisPercent="60%"
+                android:inputType="text"
+                android:maxLength="20"/>
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <androidx.legacy.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/cancel"
+                android:textColor="@color/error"
+                app:strokeColor="@color/error"
+                app:cornerRadius="20dp"
+                style="?attr/materialButtonOutlinedStyle"
+                android:id="@+id/cancelSettings" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textColor="@color/success"
+                app:strokeColor="@color/success"
+                app:cornerRadius="20dp"
+                style="?attr/materialButtonOutlinedStyle"
+                android:id="@+id/submitSettings" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

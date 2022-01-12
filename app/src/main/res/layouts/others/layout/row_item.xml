@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/check_box" />
+
+        <TextView
+            android:id="@+id/coutView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/percentage_input"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/coutView"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/symbole"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/percentage_input"
+            android:gravity="center"
+            android:text="%" />
+
+</RelativeLayout>

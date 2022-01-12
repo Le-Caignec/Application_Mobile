@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/navigationHome"
+            android:icon="@drawable/ic_baseline_request_quote_24"
+            android:title="@string/cagnotte" />
+
+        <item
+            android:id="@+id/navigationBalance"
+            android:icon="@drawable/ic_baseline_balance_24"
+            android:title="@string/balance" />
+
+        <item
+            android:id="@+id/navigationCategory"
+            android:icon="@drawable/ic_baseline_widgets_24"
+            android:title="@string/category" />
+</menu>

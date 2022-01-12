@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:strokeWidth="1dp"
+    app:strokeColor="@animator/stroke_color"
+    app:cardElevation="0dp"
+    android:layout_margin="8dp"
+    android:id="@+id/editProfileDialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_edit_24"
+                    android:scaleType="center"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_profile"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="75dp" >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="75dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/changeProfilePicture"
+                        android:scaleType="centerCrop" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:flexDirection="row"
+                app:alignItems="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="40%"
+                    android:text="@string/first_name"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    app:layout_flexBasisPercent="60%"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/firstNameEditProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:flexDirection="row"
+                app:alignItems="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="40%"
+                    android:text="@string/last_name"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
+                    app:layout_flexBasisPercent="60%"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lastNameEditProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:flexDirection="row"
+                app:alignItems="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_flexBasisPercent="40%"
+                    android:text="@string/valid_email"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/black" />
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_flexBasisPercent="60%"
+                    app:flexDirection="row"
+                    app:alignItems="center"
+                    app:justifyContent="space_between">
+
+                    <TextView
+                        android:id="@+id/isEmailVerified"
+                        android:layout_width="0dp"
+                        app:layout_flexBasisPercent="50%"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textAppearance="?attr/textAppearanceBody2" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="0dp"
+                        app:layout_flexBasisPercent="50%"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/reSendEmailEditProfile"
+                        app:srcCompat="@drawable/ic_baseline_email_24"
+                        android:backgroundTint="@color/warning"
+                        app:tint="@color/black"
+                        app:borderWidth="0dp"
+
+                        android:contentDescription="@string/email"
+                        android:tooltipText="@string/re_send_email" />
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+        </LinearLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            app:flexDirection="row"
+            app:justifyContent="space_around">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelEditProfile"
+                android:backgroundTint="@color/error"
+                app:tint="@color/black"
+                android:tooltipText="@string/cancel"
+                android:clickable="true"
+                app:borderWidth="0dp"
+                app:srcCompat="@drawable/ic_outline_cancel_24"
+                android:focusable="true"
+                android:contentDescription="@string/cancel"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmEditProfile"
+                android:backgroundTint="@color/info"
+                app:tint="@color/black"
+                android:tooltipText="@string/submit"
+                android:contentDescription="@string/submit"
+                android:clickable="true"
+                app:borderWidth="0dp"
+                app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
+                android:focusable="true" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
